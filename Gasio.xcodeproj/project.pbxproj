@@ -7,16 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4916E30D2B2BE0DC008CD8F9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E30C2B2BE0DC008CD8F9 /* MainView.swift */; };
+		4916E30F2B2BE101008CD8F9 /* FuelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E30E2B2BE101008CD8F9 /* FuelView.swift */; };
+		4916E3112B2BE109008CD8F9 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E3102B2BE109008CD8F9 /* CarView.swift */; };
+		49E1FDFF2B3B911C00603A59 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FDFE2B3B911C00603A59 /* Car.swift */; };
+		49E1FE012B3B912300603A59 /* FuelEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE002B3B912300603A59 /* FuelEntry.swift */; };
+		49E1FE062B3B9D9F00603A59 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE052B3B9D9F00603A59 /* CarDetailView.swift */; };
+		49E1FE082B3BB18C00603A59 /* CarDetailFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE072B3BB18C00603A59 /* CarDetailFieldView.swift */; };
+		49E1FE0A2B3BB47900603A59 /* CarEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE092B3BB47900603A59 /* CarEditView.swift */; };
+		49E1FE0C2B3BBD2E00603A59 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE0B2B3BBD2E00603A59 /* User.swift */; };
 		49EEC4B42B2B58EC00E24B9A /* GasioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EEC4B32B2B58EC00E24B9A /* GasioApp.swift */; };
-		49EEC4B62B2B58EC00E24B9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EEC4B52B2B58EC00E24B9A /* ContentView.swift */; };
+		49EEC4B62B2B58EC00E24B9A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EEC4B52B2B58EC00E24B9A /* HomeView.swift */; };
 		49EEC4B82B2B58EE00E24B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EEC4B72B2B58EE00E24B9A /* Assets.xcassets */; };
 		49EEC4BC2B2B58EE00E24B9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EEC4BB2B2B58EE00E24B9A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4916E30C2B2BE0DC008CD8F9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4916E30E2B2BE101008CD8F9 /* FuelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelView.swift; sourceTree = "<group>"; };
+		4916E3102B2BE109008CD8F9 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
+		49E1FDFE2B3B911C00603A59 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		49E1FE002B3B912300603A59 /* FuelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntry.swift; sourceTree = "<group>"; };
+		49E1FE052B3B9D9F00603A59 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		49E1FE072B3BB18C00603A59 /* CarDetailFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailFieldView.swift; sourceTree = "<group>"; };
+		49E1FE092B3BB47900603A59 /* CarEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarEditView.swift; sourceTree = "<group>"; };
+		49E1FE0B2B3BBD2E00603A59 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		49EEC4B02B2B58EC00E24B9A /* Gasio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EEC4B32B2B58EC00E24B9A /* GasioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasioApp.swift; sourceTree = "<group>"; };
-		49EEC4B52B2B58EC00E24B9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49EEC4B52B2B58EC00E24B9A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		49EEC4B72B2B58EE00E24B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49EEC4B92B2B58EE00E24B9A /* Gasio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gasio.entitlements; sourceTree = "<group>"; };
 		49EEC4BB2B2B58EE00E24B9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -33,6 +51,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4916E3042B2BDF69008CD8F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4916E3092B2BE09E008CD8F9 /* Main */,
+				4916E3082B2BDFC6008CD8F9 /* Home */,
+				4916E30A2B2BE0A7008CD8F9 /* Fuel */,
+				4916E30B2B2BE0BA008CD8F9 /* Car */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4916E3052B2BDF7C008CD8F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49E1FDFE2B3B911C00603A59 /* Car.swift */,
+				49E1FE002B3B912300603A59 /* FuelEntry.swift */,
+				49E1FE0B2B3BBD2E00603A59 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4916E3062B2BDF8E008CD8F9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4916E3072B2BDFB2008CD8F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4916E3082B2BDFC6008CD8F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				49EEC4B52B2B58EC00E24B9A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4916E3092B2BE09E008CD8F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4916E30C2B2BE0DC008CD8F9 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4916E30A2B2BE0A7008CD8F9 /* Fuel */ = {
+			isa = PBXGroup;
+			children = (
+				4916E30E2B2BE101008CD8F9 /* FuelView.swift */,
+			);
+			path = Fuel;
+			sourceTree = "<group>";
+		};
+		4916E30B2B2BE0BA008CD8F9 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				4916E3102B2BE109008CD8F9 /* CarView.swift */,
+				49E1FE052B3B9D9F00603A59 /* CarDetailView.swift */,
+				49E1FE072B3BB18C00603A59 /* CarDetailFieldView.swift */,
+				49E1FE092B3BB47900603A59 /* CarEditView.swift */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
 		49EEC4A72B2B58EC00E24B9A = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +141,10 @@
 			isa = PBXGroup;
 			children = (
 				49EEC4B32B2B58EC00E24B9A /* GasioApp.swift */,
-				49EEC4B52B2B58EC00E24B9A /* ContentView.swift */,
+				4916E3072B2BDFB2008CD8F9 /* Extensions */,
+				4916E3062B2BDF8E008CD8F9 /* ViewModels */,
+				4916E3052B2BDF7C008CD8F9 /* Models */,
+				4916E3042B2BDF69008CD8F9 /* Views */,
 				49EEC4B72B2B58EE00E24B9A /* Assets.xcassets */,
 				49EEC4B92B2B58EE00E24B9A /* Gasio.entitlements */,
 				49EEC4BA2B2B58EE00E24B9A /* Preview Content */,
@@ -139,8 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EEC4B62B2B58EC00E24B9A /* ContentView.swift in Sources */,
+				49E1FE012B3B912300603A59 /* FuelEntry.swift in Sources */,
+				49EEC4B62B2B58EC00E24B9A /* HomeView.swift in Sources */,
+				4916E30D2B2BE0DC008CD8F9 /* MainView.swift in Sources */,
+				49E1FDFF2B3B911C00603A59 /* Car.swift in Sources */,
+				4916E3112B2BE109008CD8F9 /* CarView.swift in Sources */,
+				49E1FE0A2B3BB47900603A59 /* CarEditView.swift in Sources */,
+				49E1FE082B3BB18C00603A59 /* CarDetailFieldView.swift in Sources */,
+				4916E30F2B2BE101008CD8F9 /* FuelView.swift in Sources */,
+				49E1FE062B3B9D9F00603A59 /* CarDetailView.swift in Sources */,
 				49EEC4B42B2B58EC00E24B9A /* GasioApp.swift in Sources */,
+				49E1FE0C2B3BBD2E00603A59 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
