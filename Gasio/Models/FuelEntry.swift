@@ -7,14 +7,32 @@
 
 import Foundation
 
-struct FuelEntry: Identifiable {
+struct FuelEntry: Identifiable, Hashable {
     let id = UUID()
-    let liters: Double
-    let mileage: Double
-    let date: Date
-    let fuelType: String
+    var liters: Double
+    var mileage: Double
+    var date: Date
+    var fuelType: String
     
-    var kmPerLiter: Double {
+    var consumption: Double {
         return mileage / liters
+    }
+    
+    var formattedConsumption: String {
+        return String(format: "%.2f", consumption)
+    }
+    
+    var formattedDate: String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        return formatter.string(from: date)
+    }
+    
+    var formattedMileage: String {
+        return String(format: "%.2f", mileage)
+    }
+    
+    var formattedLiters: String {
+        return String(format: "%.2f", liters)
     }
 }

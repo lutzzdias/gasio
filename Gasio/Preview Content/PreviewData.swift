@@ -7,9 +7,9 @@
 
 import Foundation
 
-let userMock = User(name: "Thiago Lütz Dias")
+var userMock = User(name: "Thiago Lütz Dias")
 
-let carMock = Car(name: "Fiote",
+var carMock = Car(name: "Fiote",
                    brand: "BMW",
                    model: "320i",
                    year: 2024,
@@ -17,6 +17,12 @@ let carMock = Car(name: "Fiote",
                    mileage: 15,
                    icon: "car.side.fill")
 
-let fuelEntryMock = FuelEntry(liters: 16.3, mileage: 45.2, date: Date(), fuelType: "Gasolina Comum")
+var fuelEntryMock = FuelEntry(liters: 16.3, mileage: 45.2, date: Date(), fuelType: "Gasolina Comum")
 
-let fuelEntriesMock = [FuelEntry](repeating: fuelEntryMock, count: 10)
+var fuelEntriesMock = [
+    FuelEntry(liters: 16.3, mileage: 45.2, date: Date(), fuelType: "Gasolina Comum"),
+    FuelEntry(liters: 30, mileage: 107.8, date: Date(), fuelType: "Etanol"),
+    FuelEntry(liters: 22.2, mileage: 73, date: Date(), fuelType: "Gasolina Aditivada"),
+    FuelEntry(liters: 7, mileage: 42, date: Date(), fuelType: "Gasolina Comum"),
+    FuelEntry(liters: 25, mileage: 83.1, date: Date(), fuelType: "Gasolina Aditivada")
+]

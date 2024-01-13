@@ -12,9 +12,12 @@ enum Tabs {
 }
 
 struct MainView: View {
+    @State var db = MockDB()
+    
     var body: some View {
         TabView {
             ConsumptionView()
+                .environment(db)
                 .tabItem {
                     Label("Consumption", systemImage: "fuelpump").foregroundStyle(.accent)
                 }
@@ -31,7 +34,8 @@ struct MainView: View {
                     Label("Car", systemImage: "car")
                 }
                 .tag(Tabs.CAR)
-        }.tint(.accent)
+        }
+        .tint(.accent)
     }
 }
 

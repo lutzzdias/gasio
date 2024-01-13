@@ -11,6 +11,9 @@
 		4916E30F2B2BE101008CD8F9 /* ConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E30E2B2BE101008CD8F9 /* ConsumptionView.swift */; };
 		4916E3112B2BE109008CD8F9 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E3102B2BE109008CD8F9 /* CarView.swift */; };
 		493310F92B522839006DE644 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310F82B522839006DE644 /* PreviewData.swift */; };
+		493310FB2B522E15006DE644 /* FuelEntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FA2B522E15006DE644 /* FuelEntryDetailView.swift */; };
+		493310FD2B5240D7006DE644 /* AddFuelEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FC2B5240D7006DE644 /* AddFuelEntryView.swift */; };
+		493310FF2B524451006DE644 /* MockDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FE2B524451006DE644 /* MockDB.swift */; };
 		49E1FDFF2B3B911C00603A59 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FDFE2B3B911C00603A59 /* Car.swift */; };
 		49E1FE012B3B912300603A59 /* FuelEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE002B3B912300603A59 /* FuelEntry.swift */; };
 		49E1FE062B3B9D9F00603A59 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE052B3B9D9F00603A59 /* CarDetailView.swift */; };
@@ -28,6 +31,9 @@
 		4916E30E2B2BE101008CD8F9 /* ConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView.swift; sourceTree = "<group>"; };
 		4916E3102B2BE109008CD8F9 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
 		493310F82B522839006DE644 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		493310FA2B522E15006DE644 /* FuelEntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntryDetailView.swift; sourceTree = "<group>"; };
+		493310FC2B5240D7006DE644 /* AddFuelEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelEntryView.swift; sourceTree = "<group>"; };
+		493310FE2B524451006DE644 /* MockDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDB.swift; sourceTree = "<group>"; };
 		49E1FDFE2B3B911C00603A59 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		49E1FE002B3B912300603A59 /* FuelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntry.swift; sourceTree = "<group>"; };
 		49E1FE052B3B9D9F00603A59 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
@@ -74,20 +80,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		4916E3062B2BDF8E008CD8F9 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		4916E3072B2BDFB2008CD8F9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		4916E3082B2BDFC6008CD8F9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				4916E30E2B2BE101008CD8F9 /* ConsumptionView.swift */,
+				493310FA2B522E15006DE644 /* FuelEntryDetailView.swift */,
+				493310FC2B5240D7006DE644 /* AddFuelEntryView.swift */,
 			);
 			path = Consumption;
 			sourceTree = "<group>";
@@ -143,8 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				49EEC4B32B2B58EC00E24B9A /* GasioApp.swift */,
-				4916E3072B2BDFB2008CD8F9 /* Extensions */,
-				4916E3062B2BDF8E008CD8F9 /* ViewModels */,
 				4916E3052B2BDF7C008CD8F9 /* Models */,
 				4916E3042B2BDF69008CD8F9 /* Views */,
 				49EEC4B72B2B58EE00E24B9A /* Assets.xcassets */,
@@ -159,6 +151,7 @@
 			children = (
 				49EEC4BB2B2B58EE00E24B9A /* Preview Assets.xcassets */,
 				493310F82B522839006DE644 /* PreviewData.swift */,
+				493310FE2B524451006DE644 /* MockDB.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -236,11 +229,14 @@
 				49E1FE012B3B912300603A59 /* FuelEntry.swift in Sources */,
 				49EEC4B62B2B58EC00E24B9A /* HomeView.swift in Sources */,
 				4916E30D2B2BE0DC008CD8F9 /* MainView.swift in Sources */,
+				493310FF2B524451006DE644 /* MockDB.swift in Sources */,
 				49E1FDFF2B3B911C00603A59 /* Car.swift in Sources */,
 				4916E3112B2BE109008CD8F9 /* CarView.swift in Sources */,
 				49E1FE0A2B3BB47900603A59 /* CarEditView.swift in Sources */,
 				49E1FE082B3BB18C00603A59 /* CarDetailFieldView.swift in Sources */,
+				493310FD2B5240D7006DE644 /* AddFuelEntryView.swift in Sources */,
 				4916E30F2B2BE101008CD8F9 /* ConsumptionView.swift in Sources */,
+				493310FB2B522E15006DE644 /* FuelEntryDetailView.swift in Sources */,
 				493310F92B522839006DE644 /* PreviewData.swift in Sources */,
 				49E1FE062B3B9D9F00603A59 /* CarDetailView.swift in Sources */,
 				49EEC4B42B2B58EC00E24B9A /* GasioApp.swift in Sources */,
