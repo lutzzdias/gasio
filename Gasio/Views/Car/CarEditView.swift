@@ -66,5 +66,5 @@ struct CarEditView: View {
 }
 
 #Preview {
-    CarEditView(car: .constant(Car.mock()), user: .constant(User.mock()))
+    CarEditView(car: .constant(carMock), user: .constant(userMock))
 }

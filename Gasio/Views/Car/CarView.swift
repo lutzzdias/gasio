@@ -9,9 +9,10 @@ import SwiftUI
 
 struct CarView: View {
     
+    @State private var car: Car = carMock
+    @State private var user: User = userMock
+    
     @State private var showingEditSheet = false
-    @State private var car: Car = Car.mock()
-    @State private var user: User = User.mock()
     
     var body: some View {
         NavigationStack {

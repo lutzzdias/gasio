@@ -14,7 +14,7 @@ enum Tabs {
 struct MainView: View {
     var body: some View {
         TabView {
-            FuelView()
+            ConsumptionView()
                 .tabItem {
                     Label("Consumption", systemImage: "fuelpump").foregroundStyle(.accent)
                 }

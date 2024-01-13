@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct FuelEntry {
-    let amount: Int
-    let mileage: Int
+struct FuelEntry: Identifiable {
+    let id = UUID()
+    let liters: Double
+    let mileage: Double
     let date: Date
+    let fuelType: String
+    
+    var kmPerLiter: Double {
+        return mileage / liters
+    }
 }
