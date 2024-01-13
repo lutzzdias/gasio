@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CarView: View {
     
-    @State private var isShowingEditView = false
+    @State private var showingEditSheet = false
     @State private var car: Car = Car.mock()
     @State private var user: User = User.mock()
     
@@ -51,27 +51,14 @@ struct CarView: View {
                 .listStyle(.plain)
                 .toolbar {
                     Button("Edit") {
-                        isShowingEditView = true
+                        showingEditSheet.toggle()
                     }
                 }
-                .sheet(isPresented: $isShowingEditView) {
+                .sheet(isPresented: $showingEditSheet) {
                     NavigationStack {
                         CarEditView(car: $car, user: $user)
-                            .navigationTitle("Car name")
-                            .toolbar {
-                                ToolbarItem(placement: .cancellationAction) {
-                                    Button("Cancel") {
-                                        isShowingEditView = false
-                                    }
-                                }
-                                ToolbarItem(placement: .confirmationAction) {
-                                    Button("Done") {
-                                        isShowingEditView = false
-                                    }
-                                }
-                            }
                     }
-            }
+                }
             }
         }
     }

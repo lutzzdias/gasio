@@ -8,23 +8,58 @@
 import SwiftUI
 
 struct CarEditView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @Binding var car: Car
     @Binding var user: User
     
+    private let currentYear: Int = Calendar.current.component(.year, from: Date())
+    
     var body: some View {
         Form {
-            
             Section("User") {
-                TextField("Name", text: $user.name)
+                TextField("username", text: $user.name, prompt: Text("Name"))
             }
             
             Section("Car") {
                 TextField("Name", text: $car.name)
+                    .autocorrectionDisabled(true)
+                    .textContentType(.name)
+                
                 TextField("Brand", text: $car.brand)
+                    .autocorrectionDisabled(true)
+                    .textInputAutocapitalization(.words)
+                
                 TextField("Model", text: $car.model)
-                TextField("Year", value: $car.year, formatter: NumberFormatter())
+                    .autocorrectionDisabled(true)
+                    .textInputAutocapitalization(.words)
+                
+                Picker("Year", selection: $car.year) {
+                    ForEach(1900 ..< (currentYear + 1), id: \.self) { year in
+                        Text(String(year)).tag(year)
+                    }
+                }
+                
                 TextField("Plate", text: $car.plate)
+                    .autocorrectionDisabled(true)
+                    .textInputAutocapitalization(.characters)
+                
+                
                 TextField("Mileage", value: $car.mileage, formatter: NumberFormatter())
+                    .keyboardType(.numberPad)
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .cancellationAction) {
+                Button("Cancel") {
+                    dismiss()
+                }
+            }
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Done") {
+                    // context.save()
+                    dismiss()
+                }
             }
         }
     }

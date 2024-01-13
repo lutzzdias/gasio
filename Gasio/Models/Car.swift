@@ -20,6 +20,12 @@ struct Car: Identifiable {
 
 extension Car {
     static func mock() -> Car {
-        return Car(name: "Fiote", brand: "BMW", model: "320i", year: 2024, plate: "QAY0D46", mileage: 15, icon: "car.side.fill")
+        return Car(name: "Fiote", 
+                   brand: "BMW",
+                   model: "320i",
+                   year: 2024,
+                   plate: "QAY0D46",
+                   mileage: 15,
+                   icon: "car.side.fill")
     }
 }
