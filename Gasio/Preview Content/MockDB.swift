@@ -10,4 +10,6 @@ import Foundation
 @Observable
 class MockDB {
     var fuelEntries = fuelEntriesMock
+    var user = userMock
+    var car = carMock
 }
