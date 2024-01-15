@@ -6,18 +6,27 @@
 //
 
 import Foundation
+import SwiftData
 
-struct FuelEntry: Identifiable, Hashable {
-    let id = UUID()
+@Model
+class FuelEntry {
     var liters: Double
     var mileage: Double
     var date: Date
     var fuelType: String
     
+    init(liters: Double, mileage: Double, date: Date, fuelType: String) {
+        self.liters = liters
+        self.mileage = mileage
+        self.date = date
+        self.fuelType = fuelType
+    }
+    
     var consumption: Double {
         return mileage / liters
     }
     
+    // TODO: Remove all these formatted...
     var formattedConsumption: String {
         return String(format: "%.2f", consumption)
     }

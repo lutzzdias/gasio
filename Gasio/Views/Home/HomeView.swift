@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    @AppStorage("username") var username: String = ""
+    
     var body: some View {
         VStack {
-            Text("Home")
+            Text(username)
         }
         .padding()
     }

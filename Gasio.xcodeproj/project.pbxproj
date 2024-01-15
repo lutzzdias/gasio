@@ -10,15 +10,15 @@
 		4916E30D2B2BE0DC008CD8F9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E30C2B2BE0DC008CD8F9 /* MainView.swift */; };
 		4916E30F2B2BE101008CD8F9 /* ConsumptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E30E2B2BE101008CD8F9 /* ConsumptionView.swift */; };
 		4916E3112B2BE109008CD8F9 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E3102B2BE109008CD8F9 /* CarView.swift */; };
-		493310F92B522839006DE644 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310F82B522839006DE644 /* PreviewData.swift */; };
-		493310FB2B522E15006DE644 /* FuelEntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FA2B522E15006DE644 /* FuelEntryDetailView.swift */; };
+		493310F92B522839006DE644 /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310F82B522839006DE644 /* PreviewSampleData.swift */; };
+		493310FB2B522E15006DE644 /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FA2B522E15006DE644 /* EntryDetailView.swift */; };
 		493310FD2B5240D7006DE644 /* AddFuelEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FC2B5240D7006DE644 /* AddFuelEntryView.swift */; };
-		493310FF2B524451006DE644 /* MockDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FE2B524451006DE644 /* MockDB.swift */; };
+		495EDD812B550BCF003FBB1D /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EDD802B550BCF003FBB1D /* EntryCardView.swift */; };
+		495EDD832B551D93003FBB1D /* CarAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EDD822B551D93003FBB1D /* CarAvatarView.swift */; };
 		49E1FDFF2B3B911C00603A59 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FDFE2B3B911C00603A59 /* Car.swift */; };
 		49E1FE012B3B912300603A59 /* FuelEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE002B3B912300603A59 /* FuelEntry.swift */; };
 		49E1FE082B3BB18C00603A59 /* CarDetailFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE072B3BB18C00603A59 /* CarDetailFieldView.swift */; };
 		49E1FE0A2B3BB47900603A59 /* CarEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE092B3BB47900603A59 /* CarEditView.swift */; };
-		49E1FE0C2B3BBD2E00603A59 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FE0B2B3BBD2E00603A59 /* User.swift */; };
 		49EEC4B42B2B58EC00E24B9A /* GasioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EEC4B32B2B58EC00E24B9A /* GasioApp.swift */; };
 		49EEC4B62B2B58EC00E24B9A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EEC4B52B2B58EC00E24B9A /* HomeView.swift */; };
 		49EEC4B82B2B58EE00E24B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EEC4B72B2B58EE00E24B9A /* Assets.xcassets */; };
@@ -29,15 +29,15 @@
 		4916E30C2B2BE0DC008CD8F9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4916E30E2B2BE101008CD8F9 /* ConsumptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView.swift; sourceTree = "<group>"; };
 		4916E3102B2BE109008CD8F9 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
-		493310F82B522839006DE644 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
-		493310FA2B522E15006DE644 /* FuelEntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntryDetailView.swift; sourceTree = "<group>"; };
+		493310F82B522839006DE644 /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
+		493310FA2B522E15006DE644 /* EntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
 		493310FC2B5240D7006DE644 /* AddFuelEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelEntryView.swift; sourceTree = "<group>"; };
-		493310FE2B524451006DE644 /* MockDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDB.swift; sourceTree = "<group>"; };
+		495EDD802B550BCF003FBB1D /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
+		495EDD822B551D93003FBB1D /* CarAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAvatarView.swift; sourceTree = "<group>"; };
 		49E1FDFE2B3B911C00603A59 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		49E1FE002B3B912300603A59 /* FuelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntry.swift; sourceTree = "<group>"; };
 		49E1FE072B3BB18C00603A59 /* CarDetailFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailFieldView.swift; sourceTree = "<group>"; };
 		49E1FE092B3BB47900603A59 /* CarEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarEditView.swift; sourceTree = "<group>"; };
-		49E1FE0B2B3BBD2E00603A59 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		49EEC4B02B2B58EC00E24B9A /* Gasio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EEC4B32B2B58EC00E24B9A /* GasioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasioApp.swift; sourceTree = "<group>"; };
 		49EEC4B52B2B58EC00E24B9A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -73,7 +73,6 @@
 			children = (
 				49E1FDFE2B3B911C00603A59 /* Car.swift */,
 				49E1FE002B3B912300603A59 /* FuelEntry.swift */,
-				49E1FE0B2B3BBD2E00603A59 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,8 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				4916E30E2B2BE101008CD8F9 /* ConsumptionView.swift */,
-				493310FA2B522E15006DE644 /* FuelEntryDetailView.swift */,
+				493310FA2B522E15006DE644 /* EntryDetailView.swift */,
 				493310FC2B5240D7006DE644 /* AddFuelEntryView.swift */,
+				495EDD802B550BCF003FBB1D /* EntryCardView.swift */,
 			);
 			path = Consumption;
 			sourceTree = "<group>";
@@ -110,6 +110,7 @@
 				4916E3102B2BE109008CD8F9 /* CarView.swift */,
 				49E1FE072B3BB18C00603A59 /* CarDetailFieldView.swift */,
 				49E1FE092B3BB47900603A59 /* CarEditView.swift */,
+				495EDD822B551D93003FBB1D /* CarAvatarView.swift */,
 			);
 			path = Car;
 			sourceTree = "<group>";
@@ -147,8 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				49EEC4BB2B2B58EE00E24B9A /* Preview Assets.xcassets */,
-				493310F82B522839006DE644 /* PreviewData.swift */,
-				493310FE2B524451006DE644 /* MockDB.swift */,
+				493310F82B522839006DE644 /* PreviewSampleData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 		49EEC4A82B2B58EC00E24B9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
@@ -226,17 +226,17 @@
 				49E1FE012B3B912300603A59 /* FuelEntry.swift in Sources */,
 				49EEC4B62B2B58EC00E24B9A /* HomeView.swift in Sources */,
 				4916E30D2B2BE0DC008CD8F9 /* MainView.swift in Sources */,
-				493310FF2B524451006DE644 /* MockDB.swift in Sources */,
 				49E1FDFF2B3B911C00603A59 /* Car.swift in Sources */,
 				4916E3112B2BE109008CD8F9 /* CarView.swift in Sources */,
 				49E1FE0A2B3BB47900603A59 /* CarEditView.swift in Sources */,
+				495EDD832B551D93003FBB1D /* CarAvatarView.swift in Sources */,
 				49E1FE082B3BB18C00603A59 /* CarDetailFieldView.swift in Sources */,
 				493310FD2B5240D7006DE644 /* AddFuelEntryView.swift in Sources */,
 				4916E30F2B2BE101008CD8F9 /* ConsumptionView.swift in Sources */,
-				493310FB2B522E15006DE644 /* FuelEntryDetailView.swift in Sources */,
-				493310F92B522839006DE644 /* PreviewData.swift in Sources */,
+				493310FB2B522E15006DE644 /* EntryDetailView.swift in Sources */,
+				493310F92B522839006DE644 /* PreviewSampleData.swift in Sources */,
 				49EEC4B42B2B58EC00E24B9A /* GasioApp.swift in Sources */,
-				49E1FE0C2B3BBD2E00603A59 /* User.swift in Sources */,
+				495EDD812B550BCF003FBB1D /* EntryCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +373,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -412,6 +413,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -447,7 +449,7 @@
 				49EEC4BE2B2B58EE00E24B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		49EEC4BF2B2B58EE00E24B9A /* Build configuration list for PBXNativeTarget "Gasio" */ = {
 			isa = XCConfigurationList;
@@ -456,7 +458,7 @@
 				49EEC4C12B2B58EE00E24B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,33 +7,38 @@
 
 import SwiftUI
 
-enum Tabs {
-    case FUEL, HOME, CAR
+enum Tabs: String {
+    case consumption = "Consumption"
+    case home = "Home"
+    case car = "Car"
+    
+    @ViewBuilder
+    var content: some View {
+        switch self{
+        case .consumption:
+            Label(self.rawValue, systemImage: "fuelpump")
+        case .home:
+            Label(self.rawValue, systemImage: "house")
+        case .car:
+            Label(self.rawValue, systemImage: "car")
+        }
+    }
 }
 
 struct MainView: View {
-    @State var db = MockDB()
-    
     var body: some View {
         TabView {
             ConsumptionView()
-                .environment(db)
-                .tabItem {
-                    Label("Consumption", systemImage: "fuelpump").foregroundStyle(.accent)
-                }
-                .tag(Tabs.FUEL)
+                .tabItem { Tabs.consumption.content }
+                .tag(Tabs.consumption)
             
             HomeView()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-                .tag(Tabs.HOME)
+                .tabItem { Tabs.home.content }
+                .tag(Tabs.home)
             
             CarView()
-                .tabItem {
-                    Label("Car", systemImage: "car")
-                }
-                .tag(Tabs.CAR)
+                .tabItem { Tabs.car.content }
+                .tag(Tabs.car)
         }
         .tint(.accent)
     }

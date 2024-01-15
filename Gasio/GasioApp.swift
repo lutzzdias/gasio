@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct GasioApp: App {
@@ -13,5 +14,6 @@ struct GasioApp: App {
         WindowGroup {
             MainView()
         }
+        .modelContainer(for: [Car.self, FuelEntry.self])
     }
 }

@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CarView: View {
+    @Environment(\.modelContext) var context
     
-    @State private var car: Car = carMock
-    @State private var user: User = userMock
+    @Query var cars: [Car]
+    var car: Car { 
+        // TODO: Make user save car on first entry
+        if cars.isEmpty {
+            context.insert(SampleData.car)
+        }
+        return cars.first ?? SampleData.car
+    }
     
     @State private var showingEditSheet = false
     
@@ -19,16 +27,8 @@ struct CarView: View {
             ScrollView {
                 VStack {
                     Spacer()
-                    ZStack {
-                        Circle()
-                            .frame(width: 250, height: 250)
-                            .foregroundColor(.accent)
-                        
-                        Image(systemName: car.icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 175, height: 175)
-                    }
+                    
+                    CarAvatarView(icon: car.icon)
                     
                     Text(car.name)
                         .font(.largeTitle)
@@ -45,20 +45,17 @@ struct CarView: View {
                         
                         CarDetailFieldView(title: "Plate", content: car.plate)
                         
-                        CarDetailFieldView(title: "Mileage", content: "\(123_456) km")
+                        CarDetailFieldView(title: "Mileage", content: "\(car.mileage) km")
                     }
                 }
                 .padding()
-                .listStyle(.plain)
                 .toolbar {
                     Button("Edit") {
                         showingEditSheet.toggle()
                     }
                 }
                 .sheet(isPresented: $showingEditSheet) {
-                    NavigationStack {
-                        CarEditView(car: $car, user: $user)
-                    }
+                    CarEditView(car: car)
                 }
             }
         }

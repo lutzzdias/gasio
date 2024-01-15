@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Car: Identifiable {
-    let id = UUID()
+@Model
+class Car {
     var name: String
     var brand: String
     var model: String
@@ -16,6 +17,22 @@ struct Car: Identifiable {
     var plate: String
     var mileage: Int
     var icon: String
+    
+    init(name: String, 
+         brand: String,
+         model: String,
+         year: Int,
+         plate: String,
+         mileage: Int,
+         icon: String) {
+        self.name = name
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.plate = plate
+        self.mileage = mileage
+        self.icon = icon
+    }
 }
 
 

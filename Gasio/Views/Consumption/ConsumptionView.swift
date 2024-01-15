@@ -6,65 +6,44 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ConsumptionView: View {
     
-    @Environment(MockDB.self) private var db
+    @Environment(\.modelContext) private var context
+    
+    /// Get entries from the database
+    @Query(sort: [SortDescriptor(\FuelEntry.date, order: .reverse)], animation: .snappy) private var entries: [FuelEntry]
     
     @State private var showingAddSheet = false
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(db.fuelEntries) {entry in
-                    NavigationLink(value: entry) {
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(entry.fuelType)
-                                    .fontWeight(.semibold)
-                                
-                                Text(entry.formattedDate)
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
-                            
-                            Spacer()
-                            
-                            Text(entry.formattedConsumption) + Text(" km/l").font(.caption)
-                        }
+                ForEach(entries) { entry in
+                    NavigationLink(destination: EntryDetailView(fuelEntry: entry)) {
+                        EntryCardView(entry: entry)
                     }
                 }
-                .onDelete(perform: deleteEntry)
+                .onDelete(perform: { indexSet in
+                    let entry = entries[indexSet.first!]
+                    context.delete(entry)
+                })
             }
-            .navigationTitle("Consumption")
-            .navigationDestination(for: FuelEntry.self) { entry in
-                FuelEntryDetailView(fuelEntry: entry)
-            }
+            .navigationTitle(Tabs.consumption.rawValue)
             .toolbar {
                 ToolbarItem(placement: .automatic) {
-                    Button(action: {
+                    Button("Add", systemImage: "plus") {
                         showingAddSheet.toggle()
-                    }) {
-                        Image(systemName: "plus")
                     }
                 }
             }
-            .sheet(isPresented: $showingAddSheet) {
-                NavigationStack {
-                    AddFuelEntryView()
-                        .navigationBarTitleDisplayMode(.inline)
-                        .navigationTitle("New fuel entry")
-                }
-            }
+            .sheet(isPresented: $showingAddSheet) { AddFuelEntryView() }
         }
-    }
-    
-    func deleteEntry(_ indexSet: IndexSet) {
-        db.fuelEntries.remove(atOffsets: indexSet)
     }
 }
 
 #Preview {
     ConsumptionView()
-        .environment(MockDB())
+        .modelContainer(PreviewSampleData.container)
 }
