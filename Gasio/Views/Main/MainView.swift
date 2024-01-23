@@ -45,5 +45,7 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView()
+    let container = PreviewSampleData.container
+    return MainView()
+        .modelContainer(container)
 }

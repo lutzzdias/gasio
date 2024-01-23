@@ -27,21 +27,26 @@ class FuelEntry {
     }
     
     // TODO: Remove all these formatted...
-    var formattedConsumption: String {
-        return String(format: "%.2f", consumption)
+    var formattedConsumption: Double {
+        return consumption.truncate(toDecimalPlaces: 2)
     }
     
     var formattedDate: String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        return formatter.string(from: date)
+        return DateFormatter.format.string(from: date)
     }
     
-    var formattedMileage: String {
-        return String(format: "%.2f", mileage)
+    var formattedMileage: Double {
+        return mileage.truncate(toDecimalPlaces: 2)
     }
     
-    var formattedLiters: String {
-        return String(format: "%.2f", liters)
+    var formattedLiters: Double {
+        return liters.truncate(toDecimalPlaces: 2)
     }
+    
+    static var latest: FetchDescriptor<FuelEntry> {
+        var descriptor = FetchDescriptor<FuelEntry>(sortBy: [SortDescriptor(\.date, order: .reverse)])
+        descriptor.fetchLimit = 10
+        return descriptor
+    }
+
 }

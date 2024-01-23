@@ -13,6 +13,8 @@
 		493310F92B522839006DE644 /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310F82B522839006DE644 /* PreviewSampleData.swift */; };
 		493310FB2B522E15006DE644 /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FA2B522E15006DE644 /* EntryDetailView.swift */; };
 		493310FD2B5240D7006DE644 /* AddFuelEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493310FC2B5240D7006DE644 /* AddFuelEntryView.swift */; };
+		495EB3C12B5F59C1004103D7 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EB3C02B5F59C1004103D7 /* DateFormatter.swift */; };
+		495EB3C32B5F5D94004103D7 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EB3C22B5F5D94004103D7 /* Double.swift */; };
 		495EDD812B550BCF003FBB1D /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EDD802B550BCF003FBB1D /* EntryCardView.swift */; };
 		495EDD832B551D93003FBB1D /* CarAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495EDD822B551D93003FBB1D /* CarAvatarView.swift */; };
 		49E1FDFF2B3B911C00603A59 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1FDFE2B3B911C00603A59 /* Car.swift */; };
@@ -32,6 +34,8 @@
 		493310F82B522839006DE644 /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
 		493310FA2B522E15006DE644 /* EntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
 		493310FC2B5240D7006DE644 /* AddFuelEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFuelEntryView.swift; sourceTree = "<group>"; };
+		495EB3C02B5F59C1004103D7 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		495EB3C22B5F5D94004103D7 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		495EDD802B550BCF003FBB1D /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
 		495EDD822B551D93003FBB1D /* CarAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAvatarView.swift; sourceTree = "<group>"; };
 		49E1FDFE2B3B911C00603A59 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -115,6 +119,15 @@
 			path = Car;
 			sourceTree = "<group>";
 		};
+		495EB3BF2B5F59B4004103D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				495EB3C02B5F59C1004103D7 /* DateFormatter.swift */,
+				495EB3C22B5F5D94004103D7 /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		49EEC4A72B2B58EC00E24B9A = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +147,7 @@
 		49EEC4B22B2B58EC00E24B9A /* Gasio */ = {
 			isa = PBXGroup;
 			children = (
+				495EB3BF2B5F59B4004103D7 /* Extensions */,
 				49EEC4B32B2B58EC00E24B9A /* GasioApp.swift */,
 				4916E3052B2BDF7C008CD8F9 /* Models */,
 				4916E3042B2BDF69008CD8F9 /* Views */,
@@ -225,6 +239,7 @@
 			files = (
 				49E1FE012B3B912300603A59 /* FuelEntry.swift in Sources */,
 				49EEC4B62B2B58EC00E24B9A /* HomeView.swift in Sources */,
+				495EB3C32B5F5D94004103D7 /* Double.swift in Sources */,
 				4916E30D2B2BE0DC008CD8F9 /* MainView.swift in Sources */,
 				49E1FDFF2B3B911C00603A59 /* Car.swift in Sources */,
 				4916E3112B2BE109008CD8F9 /* CarView.swift in Sources */,
@@ -232,6 +247,7 @@
 				495EDD832B551D93003FBB1D /* CarAvatarView.swift in Sources */,
 				49E1FE082B3BB18C00603A59 /* CarDetailFieldView.swift in Sources */,
 				493310FD2B5240D7006DE644 /* AddFuelEntryView.swift in Sources */,
+				495EB3C12B5F59C1004103D7 /* DateFormatter.swift in Sources */,
 				4916E30F2B2BE101008CD8F9 /* ConsumptionView.swift in Sources */,
 				493310FB2B522E15006DE644 /* EntryDetailView.swift in Sources */,
 				493310F92B522839006DE644 /* PreviewSampleData.swift in Sources */,

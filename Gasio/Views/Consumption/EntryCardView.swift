@@ -24,12 +24,18 @@ struct EntryCardView: View {
             
             Spacer()
             
-            Text(entry.formattedConsumption) + Text(" km/l").font(.caption)
+            HStack(alignment: .bottom, spacing: 0) {
+                Text(String(entry.formattedConsumption))
+                Text(" km/l")
+                    .font(.caption)
+            }
         }
     }
 }
 
 #Preview {
-    EntryCardView(entry: SampleData.entry)
-        .modelContainer(for: [FuelEntry.self])
+    let container = PreviewSampleData.container
+    
+    return EntryCardView(entry: SampleData.entry)
+        .modelContainer(container)
 }
