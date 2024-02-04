@@ -5,3 +5,4 @@ This app helps the user to keep track of their vehicle's fuel consumption with i
 **iOS 17**
 - Swift Data
 - Observable
+- Charts
